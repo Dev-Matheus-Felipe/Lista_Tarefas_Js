@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <title>Projeto Lista Tarefas</title>
+</head>
+<body>
+
+    <div class="formulario">
+        <h1>Lista de tarefas</h1>
+        <div class="container">
+            <div class="adicionar_tarefa">
+                <h2>Adicione sua tarefa</h2>
+                <form>
+                    <input type="text" id="texto_adicionar_tarefa"  placeholder="O que você vai fazer?"/>
+                    <button id="button_adicionar_tarefa">+</button>
+                </form>
+            </div>
+    
+            <div class="d-flex">
+                <div class="pesquisa">
+                    <h2>Pesquisar</h2>
+                    <form>
+                        <input id='input_pesquisar_tarefa' type="text"  placeholder="Buscar..."/>
+                        <button  id="button_pesquisar_tarefa"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+    
+                <div class="filtrar">
+                    <h2>Filtrar:</h2>
+                    <select id="selector">
+                        <option value="todos">Todos</option>
+                        <option value="feitos">Feitos</option>
+                        <option value="afazer">A fazer</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="tarefas">
+                
+            
+            </div>
+
+            <div class="editar_tarefas">
+                <h1>Edite a sua tarefa</h1>
+                <form>
+                    <input type="text"  id="input_editar_tarefas" value=""/>
+                    <button id="button_editar_tarefas">EDITAR</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="functions.js"></script>
+    <script src="https://kit.fontawesome.com/c367150456.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
