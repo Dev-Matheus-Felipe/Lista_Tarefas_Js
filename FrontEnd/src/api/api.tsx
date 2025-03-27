@@ -12,7 +12,7 @@ type Call = {
 type Infos = {
     method: string,
     headers:  { 'Content-Type': 'application/json' },
-    body?: string
+    body?: string 
 }
 
 export default async function Api(call: Call) {
