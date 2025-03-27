@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Protest Strike", sans-serif;
+  box-sizing: border-box;
+}
+
+
+html,body,#root{
+  height: 100%;
+}
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+.toDo{
+  width: 500px;
+  max-height: 600px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 2%;
+  position: relative;
+}
+  
+  .container{
+    width: 100%;
+  }
+  
+  .toDo > h1{
+  border-bottom: 1px solid black;
+  padding: 25px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  
+  .adicionar_tarefa{
+  padding: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  width: 90%;
+  margin: 0 auto;
+  
+  }
+  
+  .adicionar_tarefa > h2{
+  padding-bottom: 10px;
+  font-size: 20px;
+  }
+  
+  .adicionar_tarefa form input[type='text']{
+  height: 30px;
+  width: 200px;
+  padding-left: 10px;
+  font-size: 13px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  
+  }
+  
+  .adicionar_tarefa form button{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 17px;
+  background-color: white;
+  
+  }
+  
+  .d-flex{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  flex-flow: row wrap;
+  padding: 20px;
+  margin-bottom: 10px;
+  }
+  
+  
+  
+  .pesquisa > h2,.filtrar > h2{
+  padding-bottom: 10px;
+  font-size: 20px;
+  }
+  
+  .pesquisa{
+  margin-bottom: 5px;
+  margin-right: 7px;
+  }
+  
+  .pesquisa form input[type='text'], .filtrar select{
+  height: 30px;
+  width: 150px;
+  padding-left: 10px;
+  font-size: 13px;
+  }
+  
+  .pesquisa form{
+  display: flex;
+  flex-flow: row wrap;
+  }
+  
+  .pesquisa form button{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  flex-flow: row wrap;
+  background-color: white;
+  }
+  
+
+  .tarefas{
+    overflow: auto;
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+
+  .tarefa{
+    width: 90%;
+    min-height: 45px;
+    margin: 15px 0;
+    display: flex;
+    margin: 15px auto;
+    flex-flow: row wrap;
+    padding: 1% 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 13px;
+  }
+
+
+  .tarefa p{
+    width: 60%;
+  }
+
+  .icones{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+
+  .icones i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 6px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+
+  .fa-pencil-alt:hover{
+    background-color: yellow
+  }
+
+  .fa-times:hover{
+    background-color: red;
+  }
+
+  .fa-check:hover{
+    background-color: green;
+  }
+
+  .pedding:hover{
+    background-color: rgba(204, 204, 204, 0.6);
+  }
+
+  .completed{
+    background-color: black!important;
+    color: white;
+  }
+
+  .completed i{
+    border: 1px solid white!important;
+  }
+
+  .completed .fa-check{
+    background-color: green!important;
+    border: 0!important;
+  }
+
+  .completed i:hover{
+    border: 0!important;
+  }
+
+  .edit_task{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .edit_task form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .edit_task form input{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+
+  form input[name = 'text']{
+    font-size: 12px;
+  }
